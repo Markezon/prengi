@@ -1,0 +1,31 @@
+.header {
+    padding-top: 20px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 228px);
+        justify-content: space-between;
+        &_item {
+            display: grid;
+            grid-template-columns: 28px 189px;
+            justify-content: space-between;
+            column-gap: 10px;
+        }
+        &_icon {
+            grid-column: 1 / 2;
+        }
+        &_title {
+            grid-column: 2 /3;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            color: #242424;
+        }
+        &_subtitle {
+            grid-column: 2 / 3;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            color: #242424;
+        }
+    }
+}
