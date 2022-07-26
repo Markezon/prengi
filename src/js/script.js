@@ -82,6 +82,7 @@ validation
   });
 
 
+ //slider
   
   const slider = document.querySelector('.swiper-container');
 
@@ -96,13 +97,13 @@ validation
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
+/*     breakpoints: {
       992: {
         slidesPerView: 3,
         centeredSlides: true,
         spaceBetween: 50,
       }
-    },
+    }, */
   });
 
   //hamburger

@@ -1,0 +1,38 @@
+.promo {
+	margin-top: 10px;
+    height: 700px;
+	background: url(../../img/promo/promo_bg.png) center (center/cover) no-repeat;
+	&__wrapper {
+		padding-top: 25px;
+		display: grid;
+		grid-template-columns: 140px 550px;
+		justify-content: space-between;
+	}
+	&__title {
+		padding-top: 105px;
+		font-size: 42px;
+		line-height: 48px;
+		font-weight: 900;
+		color: #ffffff;
+	}
+	&__text {
+		margin-top: 27px;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 400;
+		color: #ffffff;
+	}
+	&__img {
+		height: 569px;
+	}
+	&__btn {
+		margin-top: 40px;
+		margin-left: 10px;
+	}
+
+}
+.swiper-slide.card {
+	display: grid;
+	grid-template-columns: 530px 420px;
+	justify-content: space-between;
+}
