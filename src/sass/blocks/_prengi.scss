@@ -1,0 +1,55 @@
+.prengi {
+    min-height: 900px;
+    padding-top: 60px;
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    &__item {
+        position: relative;
+        width: 360px;
+        height: 255px;
+        &_arrow {
+            width: 100%;
+            padding: 60px 0 10px 0;
+        }
+        &_bg {
+            position: absolute;
+            z-index: -2;
+        }
+        &_descr {
+            z-index: 10;
+            text-align: center;
+            padding-top: 176px;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 300;
+            color: #393939;
+            &-big {
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 700;
+                color: #393939;
+                text-align: center;
+                padding-top: 176px;
+            }
+        }
+        &_img {
+            display: block;
+            margin: 0 auto;
+        }
+        &_title {
+            text-align: center;
+            margin-top: 33px;
+            font-size: 48.1px;
+            line-height: 30px;
+            font-weight: 700;
+            color: #393939;
+        }
+    }
+
+
+}
