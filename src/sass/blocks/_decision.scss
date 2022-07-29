@@ -54,6 +54,12 @@
         height: 560px;
         text-align: center;
     }
+    .swiper-button-prev,
+    .swiper-button-next {
+        &:after {
+            color: $main-color;
+        }
+    }
     
 
 }
