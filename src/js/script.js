@@ -123,3 +123,134 @@ document.querySelector('.slide-to5').addEventListener('click', () => {
 document.querySelector('.slide-to6').addEventListener('click', () => {
 	swiper2.slideTo(6);
 });
+
+////////////////////////////////////////
+
+/////////////////////////////////////////////
+
+// inputmask
+const form = document.querySelector('.form');
+const telSelector = form.querySelector('input[type="tel"]');
+const inputMask = new Inputmask('+7 (999) 999-99-99');
+inputMask.mask(telSelector);
+
+const validation = new JustValidate('.form');
+
+validation
+  .addField('.input-name', [
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'minimum of 2 characters'
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Введите имя!'
+    }
+  ])
+  .addField('.input-policy', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Please agree'
+    }
+	])
+  .addField('.input-mail', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Email обязателен',
+    },
+    {
+      rule: 'email',
+      value: true,
+      errorMessage: 'Введите корректный Email',
+    },
+  ])
+  .addField('.input-tel', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Телефон обязателен',
+    },
+    {
+      rule: 'function',
+      validator: function() {
+        const phone = telSelector.inputmask.unmaskedvalue();
+        return phone.length === 10;
+      },
+      errorMessage: 'Введите корректный телефон',
+    },
+  ]).onSuccess((event) => {
+    console.log('Validation passes and form submitted', event);
+
+    let formData = new FormData(event.target);
+
+    console.log(...formData);
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log('Отправлено');
+        }
+      }
+    }
+
+    xhr.open('POST', 'mail.php', true);
+    xhr.send(formData);
+
+    event.target.reset();
+  });
+
+
+  
+  
+$(document).ready(function(){
+
+
+  //Modal
+
+	$('[data-modal=consultation]').on('click', function() {
+		$('.overlay2, #consultation').fadeIn('slow');
+	});
+	$('.modal__close').on('click', function() {
+		$('.overlay2, #consultation, #thanks').fadeOut('slow');
+	});
+
+
+
+  //scroll
+
+  $(window).scroll(function() {
+		if ($(this).scrollTop() > 1000) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+	
+	$("a[href^='#']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+	});
+
+	$("a[href^='#']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+	});
+
+});
+  
+  
+  
+  
+  
