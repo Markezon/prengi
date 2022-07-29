@@ -83,3 +83,43 @@ let swiper = new Swiper('.swiper', {
     }
   }, */
 });
+
+const swiper2 = new Swiper('.swiper2', {
+	// Optional parameters 
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 50, 
+/* 	pagination: {
+		el: ".swiper-pagination",
+		type: "fraction",
+	}, */ 
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+});
+
+document.querySelector('.slide-to1').addEventListener('click', () => {
+	swiper2.slideTo(1);
+});
+
+document.querySelector('.slide-to2').addEventListener('click', () => {
+	swiper2.slideTo(2);
+});
+
+document.querySelector('.slide-to3').addEventListener('click', () => {
+	swiper2.slideTo(3);
+});
+
+document.querySelector('.slide-to4').addEventListener('click', () => {
+	swiper2.slideTo(4);
+});
+
+document.querySelector('.slide-to5').addEventListener('click', () => {
+	swiper2.slideTo(5);
+});
+
+document.querySelector('.slide-to6').addEventListener('click', () => {
+	swiper2.slideTo(6);
+});

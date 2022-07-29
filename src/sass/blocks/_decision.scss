@@ -1,0 +1,60 @@
+.decision {
+    height: 890px;
+    padding-top: 79px;
+    background: url(../../img/decision/decision_bg.png) center (center/cover) no-repeat;
+    &__title {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__wrapper {
+        display: block;
+        margin: 0 auto;
+        width: 906px;
+    }
+
+    &__border {
+        display: flex;
+        justify-content: space-between;
+        width: 906px;
+        height: 64px;
+        border: 1px solid #ffffff;
+        padding: 10px 0;
+        margin-bottom: 36px;
+    }
+    &__button {
+        background-color: rgba($color: #000000, $alpha: 0.0);
+        border: none;
+        width: 150px;
+        border-right: 1px dotted white;
+/*         padding:0 25px; */
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #ffffff;
+        &:last-child {
+            border-right: none;
+        }
+        &:active {
+            font-weight: 700;
+            color: $main-color;
+            outline: none;
+        }
+        &:focus {
+            font-weight: 700;
+            color: $main-color;
+            outline: none; 
+        }
+    }
+
+
+
+    .swiper {
+        width: 1020px;
+        height: 560px;
+        text-align: center;
+    }
+    
+
+}
+
