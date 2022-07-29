@@ -1,0 +1,17 @@
+.contacts {
+    min-height: 690px;
+    padding: 80px 0;
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        margin-top: 75px;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,44 @@
+.benefits {
+    padding-top: 81px;
+    min-height: 1334px;
+    &__title {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(2, 570px);
+        grid-template-rows: repeat(3, 355px);
+    }
+    &__item {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    &__item_descr {
+        text-align: center;
+        font-size: 23px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__item.time {
+        background: url(../../img/benefits/time.png) center (center/cover) no-repeat;
+    }
+    &__item.intellect {
+        background: url(../../img/benefits/intellect.png) center (center/cover) no-repeat;
+    }
+    &__item.world {
+        background: url(../../img/benefits/world.png) center (center/cover) no-repeat;
+    }
+    &__item.app {
+        background: url(../../img/benefits/app.png) center (center/cover) no-repeat;
+    }
+    &__item.business {
+        background: url(../../img/benefits/business.png) center (center/cover) no-repeat;
+    }
+    &__item.payment {
+        background: url(../../img/benefits/payment.png) center (center/cover) no-repeat;
+    }
+
+}

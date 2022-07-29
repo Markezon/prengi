@@ -5,12 +5,13 @@
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 60px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.07);
     transition: all 0.6s;
+    text-align: center;
     &:hover {
         transform: scale(105%);
         box-shadow: 0px 4px 4px rgba($color: $main-color, $alpha: 0.5);

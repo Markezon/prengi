@@ -1,0 +1,46 @@
+.start {
+    min-height: 580px;
+    background: url(../../img/start/start_bg.png) center (center/cover) no-repeat;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 570px);
+        grid-template-rows: 580px;
+    }
+    &__title {
+        padding-top: 80px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 900;
+        color: #ffffff;
+    }
+    &__item_title {
+        margin-top: 270px;
+        font-size: 30px;
+        line-height: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__item_descr {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__item.cloud {
+        display: grid;
+        padding-right: 82px;
+        justify-items: end;
+        text-align: right;
+    }
+    &__item.server {
+        display: grid;
+        padding-left: 82px;
+        justify-items: start;
+    }
+
+}
