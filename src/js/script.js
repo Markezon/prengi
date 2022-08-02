@@ -62,26 +62,27 @@ menu.addEventListener('click', (e) => {
 
 //slider
 
-const slider = document.querySelector('.swiper-container');
-
-let swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
+const swiper1 = new Swiper('.swiper1', {
+  // Optional parameters 
   loop: true,
+  slidesPerView: 1,
+  spaceBetween: 50,
+  slideClass: 'swiper-slide1',
+  wrapperClass: 'swiper-wrapper1',
+  
+
+  // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+    el: '.swiper-pagination',    
+    clickable: true,    
   },
+
+  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next1',
+    prevEl: '.swiper-button-prev1',
   },
-/*   breakpoints: {
-    992: {
-      slidesPerView: 1,
-      centeredSlides: true,
-      spaceBetween: 50,
-    }
-  }, */
+
 });
 
 const swiper2 = new Swiper('.swiper2', {

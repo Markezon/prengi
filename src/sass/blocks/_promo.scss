@@ -1,6 +1,6 @@
 .promo {
 	margin-top: 10px;
-    height: 700px;
+    height: 689px;
 	background: url(../../img/promo/promo_bg.png) center (center/cover) no-repeat;
 	&__wrapper {
 		padding-top: 25px;
@@ -23,7 +23,8 @@
 		color: #ffffff;
 	}
 	&__img {
-		height: 569px;
+		width: 434px;
+		height: 589px;
 	}
 	&__btn {
 		margin-top: 40px;
@@ -32,108 +33,135 @@
 	button {
 		outline: none;
 	}
+}
 
-	.slider-container {
-		margin-top: 41px;
-	}
+
+.slider-container {
+	margin-top: 28px;
+}
+
+.swiper1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.swiper-wrapper1 {
+    display: flex;
+    width: 100%;
+    height: 570px;    
+}
+
+.swiper-slide1 {
+	display: grid;
+	grid-template-columns: 530px 420px;
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+/* 	.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 68px;
+} */
+
+
+
+/// Pagination
+
+
+.swiper-pagination-bullet {
+	width: 11px;
+	height: 11px;
+	margin: 0 15px;
+	border: 1px solid #ffffff;
+	background-color: rgba($color: #000000, $alpha: 0.0);
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #ffffff;;
+}
+
+
+
+
+
+
+//swiper buttons
+
+
+.swiper-button-prev1,
+.swiper-button-next1 {
+	background-color: rgba($color: #ffffff, $alpha: 0.0);
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	border: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	position: static;
+}
+
+.swiper-button-prev1::after,
+.swiper-button-next1::after {
+	content: '';
+	display: none;
+}
+
+.swiper-button-prev1 {
+	position: absolute;
+	left: -65px;
+    top: 30px;
+    transform: translateY(50%);
+	background-image: url("../../icons/left.svg");
+}
+
+.swiper-button-next1 {
+	right: -65px;
+	top: 30px;
+    transform: translateY(50%);
+    position: absolute;
+	background-image: url("../../icons/right.svg");
+}
+
+.slider-bottom {
+	position: absolute;
+	bottom: 69px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
 	
-	.swiper-slide.card {
-		display: grid;
-		grid-template-columns: 530px 420px;
-		justify-content: space-between;
-	}
-	
-	.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-		bottom: 68px;
-	}
-	
-	.swiper-pagination-bullet {
-		width: 11px;
-		height: 11px;
-		margin: 0 15px;
-		border: 1px solid #ffffff;
-		background-color: rgba($color: #000000, $alpha: 0.0);
-		opacity: 1;
-	}
-	
-	.swiper-pagination-bullet-active {
-		background-color: #ffffff;;
-	}
-	
-	
-	
-	//swiper buttons
-	
-	.card {
-		padding: 30px;
-		min-height: 300px;
-		color: #111;
-		font-size: 16px;
-	}
-	
-	.slider-container {
-		max-width: 100%;
-		padding: 0 15px;
-		position: relative;
-		margin: 0 auto;
-	}
-	
-	.swiper-button-prev,
-	.swiper-button-next {
-		background-color: rgba($color: #ffffff, $alpha: 0.0);
-		width: 16px;
-		height: 16px;
-		border-radius: 100%;
-		border: none;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 16px 16px;
-		position: static;
-	}
-	
-	.swiper-button-prev::after,
-	.swiper-button-next::after {
-		display: none;
-	}
-	
-	.swiper-button-prev {
-		background-image: url("../../icons/left.svg");
-		&:hover {
-			transition: all 0.5s;
-			transform: scale(1.2);
-		}
-	}
-	
-	.swiper-button-next {
-		background-image: url("../../icons/right.svg");
-		margin-left: 100px;
-		&:hover {
-			transition: all 0.5s;
-			transform: scale(1.2);
-		}
-	}
-	
-	.slider-buttons {
-		display: flex;
-		align-items: center;
-	}
-	
-	.slider-bottom {
-		position: absolute;
-		bottom: 69px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 10;
-		
-	
-	}
-	
-	.slider-buttons {
-		display: flex;
-		justify-content: center;
-	}
 
 }
+
+.slider-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+.swiper-slide1.card {
+	display: grid;
+	grid-template-columns: 530px 420px;
+	justify-content: space-between;
+}
+
+.card {
+	padding: 30px;
+	min-height: 300px;
+	color: #111;
+	font-size: 16px;
+}
+
+
 
 
 
