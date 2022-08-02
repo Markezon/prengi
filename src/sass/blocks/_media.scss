@@ -3,6 +3,13 @@
 	.container {
 		width: 100%;
 	}
+	.header {
+		&__wrapper {
+			grid-template-columns: repeat(3, 228px);
+			row-gap: 10px;
+			justify-content: space-around;
+		}
+	}
 
 }
 
@@ -11,9 +18,22 @@
 }
 
 @media (max-width: 768px) {
+	.header {
+		&__wrapper {
+			grid-template-columns: repeat(2, 228px);
+			row-gap: 10px;
+		}
+	}
 
 }
 
 @media (max-width: 576px) {
+	.header {
+		display: none;
+	}
+	.header__wrapper.none {
+		display: grid;
+		grid-template-columns: repeat(1, 228px);
+	}
 
 }
