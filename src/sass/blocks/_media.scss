@@ -14,6 +14,26 @@
 }
 
 @media (max-width: 992px) {
+	.promo {
+		height: 470px;
+		position: relative;
+		&__img {
+			display: none;
+		}
+		&__title {
+			padding-top: 30px;
+			font-size: 38px;
+		}
+		.swiper-slide1 {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: space-between;
+			flex-shrink: 0;
+		}
+		.swiper-wrapper1 {
+			height: 350px;
+		}
+	}
 
 }
 
@@ -23,6 +43,19 @@
 			grid-template-columns: repeat(2, 228px);
 			row-gap: 10px;
 		}
+	}
+	.promo {
+		height: 500px;
+		.swiper-wrapper1 {
+			height: 380px;
+		}
+		&__title {
+			font-size: 30px;
+		}
+		&__text {
+			font-size: 19px;
+		}
+		
 	}
 
 }
@@ -34,6 +67,15 @@
 	.header__wrapper.none {
 		display: grid;
 		grid-template-columns: repeat(1, 228px);
+	}
+	.promo {
+		&__title {
+			padding-top: 0;
+		}
+		&__btn {
+			margin-top: 10px;
+		}
+
 	}
 
 }
