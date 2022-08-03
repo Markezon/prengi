@@ -15,6 +15,14 @@
 			width: 100%;
 		}
 	}
+	.benefits {
+		&__wrapper {
+			grid-template-columns: repeat(2, 450px);
+			grid-template-rows: repeat(3, 355px);
+			row-gap: 10px;
+			justify-content: space-around;
+		}
+	}
 
 }
 
@@ -57,6 +65,22 @@
 		width: 65px;
 		height: 65px;
 	}
+	.benefits {
+		&__wrapper {
+			grid-template-columns: repeat(2, 380px);
+			grid-template-rows: repeat(3, 355px);
+			row-gap: 10px;
+			justify-content: space-around;
+		}
+		&__item {
+			&_descr {
+				font-size: 20px;
+			}
+		}
+	}
+	.title {
+		font-size: 26px;
+	}
 
 }
 
@@ -97,6 +121,15 @@
 		.swiper {
 			height: 455px;
 		}
+	}
+	.benefits {
+		&__wrapper {
+			grid-template-columns: repeat(1, 570px);
+			grid-template-rows: repeat(6, 355px);
+			row-gap: 5px;
+			justify-content: space-around;
+		}
+
 	}
 
 }
@@ -157,6 +190,15 @@
 	.title {
 		font-size: 25px;
 		line-height: 30px;
+	}
+	.benefits {
+		&__wrapper {
+			grid-template-columns: repeat(1, 320px);
+			grid-template-rows: repeat(6, 200px);
+			row-gap: 5px;
+			justify-content: space-around;
+		}
+
 	}
 
 }
