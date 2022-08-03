@@ -23,6 +23,18 @@
 			justify-content: space-around;
 		}
 	}
+	.start {
+		&__wrapper {
+			grid-template-columns: repeat(2, 495px);
+			justify-content: center;
+		}
+		&__item.cloud {
+			padding-right: 10px;
+		}
+		&__item.server {
+			padding-left: 10px;
+		}
+	}
 
 }
 
@@ -80,6 +92,20 @@
 	}
 	.title {
 		font-size: 26px;
+	}
+	.start {
+		display: none;
+	}
+	.footer {
+		padding-top: 10px;
+		&__wrapper {
+			padding: 0 30px;
+			grid-template-columns: repeat(1, 1fr);
+			text-align: center;
+		}
+		&__item_title {
+			margin-top: 10px;
+		}
 	}
 
 }

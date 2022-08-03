@@ -37,13 +37,13 @@
         color: #ffffff;
     }
     &__item.cloud {
-        display: grid;
+        display: flex;
         padding-right: 82px;
         justify-items: end;
         text-align: right;
     }
     &__item.server {
-        display: grid;
+        display: flex;
         padding-left: 82px;
         justify-items: start;
     }

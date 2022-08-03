@@ -12,7 +12,8 @@
         width: 280px;
         display: grid;
         grid-template-columns: 280px;
-        grid-template-rows: repeat(5, 50px);
+        grid-template-rows: repeat(5, 60px);
+        row-gap: 10px;
     }
     &__item {
         position: relative;
